@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://cvr7e4ddn0u3j"]
+
+[ext_resource type="Script" uid="uid://bqhetuwi83y8y" path="res://mesh_instance_3d.gd" id="1_fbxfw"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_tcnul"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_tcnul"]
+
+[node name="Node3D" type="Node3D" unique_id=326015917]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1891136174]
+mesh = SubResource("BoxMesh_tcnul")
+script = ExtResource("1_fbxfw")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=25487441]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 5)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1648331939]
+
+[node name="floor" type="MeshInstance3D" parent="." unique_id=1447974011]
+mesh = SubResource("PlaneMesh_tcnul")
